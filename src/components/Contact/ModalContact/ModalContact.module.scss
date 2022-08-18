@@ -1,0 +1,81 @@
+@import '../../../styles/variables.scss';
+
+.modalContainer {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba($color: $gray800, $alpha: 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  .modal {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: $gray950;
+    border-radius: 2px;
+    min-width: 350px;
+
+    .header {
+      margin: 0;
+      margin-bottom: 10px;
+      color: $gray300;
+    }
+
+    input {
+      border-bottom: 1px solid $gray600 !important;
+      background-color: $gray900;
+      border: none;
+      outline: none;
+      color: $gray300;
+      width: 100%;
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0;
+      padding: 8px 12px;
+      margin-top: 4px;
+  
+      &:hover {
+        background-color: $gray800;
+      }
+  
+      &:focus-within {
+        border-bottom: 1px solid $primary !important; 
+      }
+    }
+
+    label {
+      margin-bottom: 2px;
+      color: $gray300;
+    }
+
+    .containerInput {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .containerBtn {
+      display: flex;
+      column-gap: 2px;
+
+      >button:first-child {
+        background-color: $primary;
+        color: white;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+      }
+
+      >button:last-child {
+        background-color: $gray600;
+        color: white;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+  }
+}

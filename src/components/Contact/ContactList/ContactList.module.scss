@@ -1,0 +1,111 @@
+@import '../../../styles/variables.scss';
+
+.containerContactList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  row-gap: 6px;
+
+  .contactList {
+    display: grid;
+    grid-template-columns: repeat(4, 340px);
+    row-gap: 8px;
+    column-gap: 8px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 40px;
+  
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(3, 340px);
+    }
+  
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 340px);
+    }
+  
+    @media (max-width: 740px) {
+      grid-template-columns: repeat(1, 340px);
+    }
+  }
+
+  .notContacts {
+    margin-top: 40px;
+    color: $gray300;
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  .containerBtn {
+    display: grid;
+    grid-template-columns: repeat(4, 340px);
+    row-gap: 8px;
+    column-gap: 8px;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(3, 340px);
+    }
+  
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 340px);
+    }
+  
+    @media (max-width: 740px) {
+      grid-template-columns: repeat(1, 340px);
+    }
+
+    .btn {
+      align-self: flex-start;
+      border-radius: 4px;
+      background-color: $primary;
+      color: white;
+      width: 200px;
+
+      @media (max-width: 740px) {
+        width: 100%;
+      }
+    }
+  }
+
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    background-color: $gray900;
+    border-radius: 4px;
+    align-items: center;
+    padding: 20px;
+
+    h2 {
+      color: $gray300;
+      margin: 0;
+      margin-bottom: 8px;
+      align-self: flex-start;
+
+      >span {
+        color: $gray500;
+      }
+    }
+
+    .containerBtn {
+      display: flex;
+      column-gap: 4px;
+
+      >button:first-child {
+        background-color: $gray600;
+        color: white;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+      }
+
+      >button:last-child {
+        background-color: $primary;
+        color: white;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+  }
+}

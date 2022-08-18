@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.field {
+  text-align: left;
+  height: 80px;
+
+	input {
+    border-bottom: 1px solid $gray600 !important;
+    background-color: $gray900;
+    border: none;
+    outline: none;
+    color: $gray500;
+    width: 100%;
+    margin: 0;
+    padding: 8px 12px;
+    margin-top: 4px;
+
+    &:hover {
+      background-color: $gray800;
+    }
+
+    &:focus-within {
+      border-bottom: 1px solid $primary !important; 
+    }
+	}
+}
+
+.error {
+  color: $primary;
+  font-size: 12px;
+  line-height: 16px;
+}

@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.authContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .auth {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    min-width: 450px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: $gray950;
+    color: $gray500;
+
+    .header {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    column-gap: 2px;
+    >button {
+      color: white;
+    }
+
+    >button:first-child {
+      background-color: $primary;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      width: 50%;
+    }
+
+    >button:last-child {
+      background-color: $gray600;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      width: 50%;
+    }
+  }
+}

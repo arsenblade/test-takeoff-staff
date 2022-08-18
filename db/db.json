@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "71038b86-e7ef-4950-8a51-1791308f5e28",
+      "email": "testADMIN@test.ru",
+      "password": "123456",
+      "contacts": [
+        {
+          "id": "ed21e1b9-a707-4b88-9da6-dfbb0db6de3d",
+          "name": "Арсен",
+          "phone": "89195859373"
+        },
+        {
+          "id": "d0f442a3-fb0b-49c9-a80b-0e82222aca72",
+          "name": "Настя",
+          "phone": "89195937887"
+        },
+        {
+          "id": "c97cbd73-3464-4662-b732-d26ef9b0bcb0",
+          "name": "Петр",
+          "phone": "89125557688"
+        },
+        {
+          "id": "0d1307ee-6fb3-403d-bc75-367becf1a1a6",
+          "name": "Женя Работа",
+          "phone": "89997355584"
+        }
+      ]
+    },
+    {
+      "id": "0b9f64b3-8066-4d5b-8893-8030f6b50b46",
+      "email": "testADMIN1@test.ru",
+      "password": "123456",
+      "contacts": [
+        {
+          "id": "29793527-7c53-427e-b83d-afcd8b615a54",
+          "name": "Вася",
+          "phone": "89739283838"
+        },
+        {
+          "id": "75e8dc1f-858c-49fd-9384-74f0c0a66452",
+          "name": "Олег",
+          "phone": "89195859393"
+        }
+      ]
+    },
+    {
+      "id": "b306d0a0-cd79-4c8b-a367-8e15d320e8f4",
+      "email": "testADMIN2@test.ru",
+      "password": "123456",
+      "contacts": []
+    },
+    {
+      "id": "a7961e73-0668-4389-bbed-e3e6928a7780",
+      "email": "test@test.ru",
+      "password": "123456",
+      "contacts": []
+    }
+  ]
+}
